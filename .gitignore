@@ -1,7 +1,7 @@
 ### C++ ###
 # Prerequisites
 *.d
-*.github
+.github
 # Compiled Object files
 *.slo
 *.lo

@@ -31,8 +31,38 @@ using namespace std;
 
 int main() {
     
- 
-    cout << endl;
+    cout <<"Hello, welcome to Frank's Carpet Cleaning Service."<<endl;
+    
+    cout <<"How many small rooms would you like to clean? ";
+    int small_room{0};
+    cin >> small_room;
+    
+    cout <<"How many large rooms would you like to clean? ";
+    int large_room;
+    cin >>large_room;
+    
+    const double price_per_small_room {25};
+    const double price_per_large_room {35};
+    const double sales_tax {0.066};
+    const int estimate_expiry {30}; //days
+    
+    cout <<"Estimate for carpet cleaning service."<<endl;
+    cout <<"Number of small rooms: "<<small_room<<endl;
+    cout <<"Number of large rooms: "<<large_room<<endl;
+    
+    cout <<"Price per small room: $"<<price_per_small_room<<endl;
+    cout <<"Price per large room: $"<<price_per_large_room<<endl;
+    
+    cout <<"Cost: $"<<(price_per_small_room*small_room)+(price_per_large_room*large_room)<<endl;
+    
+    cout <<"Tax: $"<<((price_per_small_room*small_room)+(price_per_large_room*large_room))*sales_tax<<endl;
+    
+    cout <<"======================================"<<endl;
+    cout <<"Total estimate: $"<<((price_per_small_room*small_room)+(price_per_large_room*large_room))+(((price_per_small_room*small_room)+(price_per_large_room*large_room))*sales_tax)<<endl;
+    
+    cout <<"This estimate is valid for "<<estimate_expiry<<" days"<<endl;
+    
+    cout <<endl;
     return 0;
 }
 

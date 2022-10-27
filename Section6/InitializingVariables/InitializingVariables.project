@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CodeLite_Project Name="InitializingVariables" Version="10.0.0" InternalType="User templates">
+<CodeLite_Project Name="InitializingVariables" Version="11000" InternalType="User templates">
   <Plugins>
     <Plugin Name="qmake">
       <![CDATA[00010001N0005Debug000000000000]]>
@@ -7,6 +7,9 @@
   </Plugins>
   <Description/>
   <Dependencies/>
+  <VirtualDirectory Name="src">
+    <File Name="main.cpp"/>
+  </VirtualDirectory>
   <Settings Type="Executable">
     <GlobalSettings>
       <Compiler Options="-std=c++14;-Wall" C_Options="" Assembler="">
@@ -97,7 +100,4 @@
       </Completion>
     </Configuration>
   </Settings>
-  <VirtualDirectory Name="src">
-    <File Name="main.cpp"/>
-  </VirtualDirectory>
 </CodeLite_Project>
